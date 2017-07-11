@@ -80,6 +80,10 @@ echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.';
         <label for="revenus_conjoint">Revenus du conjoint :</label>
         <input type="text" name="revenus_conjoint" id="revenus_conjoint" />
         <br />
+        <p>Avez-vous des enfants ?</p>
+        <input type="radio" name="enfants" value="oui" id="enfants" required />Oui
+        <input type="radio" name="enfants" value="oui" id="enfants" />Non
+        <br />
         <label for="nom_enfant_1">Nom du premier enfant :</label>
         <input type="text" name="nom_enfant_1" id="nom_enfant_1" />
         <br />
