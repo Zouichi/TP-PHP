@@ -1,3 +1,4 @@
+<!-- Projet réalisé par Sarah Henry, Marie-Sophie Mayor, Daniel Girard et Rémi Boiteux -->
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
@@ -10,9 +11,9 @@
 <div id="php">
 <?php 
 
-require ('fonctions.php');
+require ('fonctions.php'); /*Appel du fichier regroupant les fonctions*/
 
-$error=0;
+$error=0; /*Initialisation du compteur d'erreur*/
 $error_mess=null;
 
 if(isset($_POST['bilan']))
@@ -614,7 +615,7 @@ else
 {
     $capital_emprunte_5=null;
 }
-if($error==0)
+if($error==0) /*Affichage des résultats des vérifications*/
 {
     $resultat['bilan']=$bilan;
     $resultat['nom']=$nom;
@@ -689,6 +690,7 @@ Else
     echo $error_mess;
 }
 
+/*Tableau listant les nationalités, noms et prénoms des clients en fonction de leur nationalité*/
 $fr_lux_1 = $_POST['fr_lux_1'];
 $nom_1 = isset($_POST['nom']) ? $_POST['nom'] : NULL;
 $prenom_1 = isset($_POST['prenom']) ? $_POST['prenom'] : NULL;

@@ -1,0 +1,7 @@
+Nous avons choisi d'utiliser <fieldset> pour pouvoir séparer le formulaire par thème.
+
+L'input radio nous permet de limiter le nombre de réponses, et de n'en choisir qu'une seule.
+
+L'input text nous permet de créer un champ pour noter une chaîne de caractères.
+
+L'input checkbox nous permet de limiter le nombre de réponses, et d'en choisir plusieurs.

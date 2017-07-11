@@ -1,3 +1,4 @@
+<!-- Projet réalisé par Sarah Henry, Marie-Sophie Mayor, Daniel Girard et Rémi Boiteux -->
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
@@ -9,10 +10,10 @@
 <body>
 <div id="time">
 <?php
-echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.';
+echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.'; /*Utilisation de PHP pour pouvoir récupérer la date du jour automatiquement*/
 ?>
 </div>
-<form method="post" action="index.php">
+<form method="post" action="index.php"> <!-- Formulaire avec <fieldset> pour pouvoir séparer les différents thèmes -->
     <fieldset>
         <p>Ce bilan concerne-t-il une ou deux personnes ?</p>
         <input type="radio" name="bilan" value="une_personne" id="bilan" required />Une personne

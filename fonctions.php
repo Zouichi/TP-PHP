@@ -1,3 +1,4 @@
+<!-- Projet réalisé par Sarah Henry, Marie-Sophie Mayor, Daniel Girard et Rémi Boiteux -->
 <?php
 function verification($type,$champ) // function de verification de champ
 {
