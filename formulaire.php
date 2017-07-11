@@ -7,9 +7,11 @@
     <title>TP PHP DU 04/07/2017</title>
 </head>
 <body>
+<div id="time">
 <?php
 echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.';
 ?>
+</div>
 <form method="post" action="index.php">
     <fieldset>
         <p>Cette déclaration concerne-t-elle une ou deux personnes ?</p>
