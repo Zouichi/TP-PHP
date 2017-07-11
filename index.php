@@ -13,6 +13,7 @@
 require ('fonctions.php');
 
 $error=0;
+$error_mess=null;
 
 if(isset($_POST['bilan']))
 {
