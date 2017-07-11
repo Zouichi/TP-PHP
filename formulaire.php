@@ -116,7 +116,7 @@ echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.';
         <br />
         <label for="montant_impots_1">Montant des impôts payé :</label>
         <input type="text" name="montant_impots_1" id="montant_impots_1" required />
-        <br />
+        <br /><br />
         <p>Pour la carte additionnelle, faites-vous votre déclaration d'impôts ?</p>
         <input type="radio" name="declaration_impots_2" value="oui" id="declaration_impots_2" />Oui
         <br />
