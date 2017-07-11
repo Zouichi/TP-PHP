@@ -12,11 +12,11 @@
 
 require ('fonctions.php');
 
-if (isset($_POST['declaration'])) {
+if (isset($_POST['bilan'])) {
 	;
 }
 	else {
-		echo "Merci d'indiquer si la déclaration concerne une ou deux personnes <br />";
+		echo "Merci d'indiquer si le bilan concerne une ou deux personnes <br />";
 	}
 
 if (isset($_POST['nom']) AND is_string($_POST['nom']))

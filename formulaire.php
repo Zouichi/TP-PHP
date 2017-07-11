@@ -14,9 +14,9 @@ echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.';
 </div>
 <form method="post" action="index.php">
     <fieldset>
-        <p>Cette déclaration concerne-t-elle une ou deux personnes ?</p>
-        <input type="radio" name="declaration" value="une_personne" id="declaration" required />Une personne
-        <input type="radio" name="declaration" value="deux_personnes" id="declaration" />Deux personnes
+        <p>Ce bilan concerne-t-il une ou deux personnes ?</p>
+        <input type="radio" name="bilan" value="une_personne" id="bilan" required />Une personne
+        <input type="radio" name="bilan" value="deux_personnes" id="bilan" />Deux personnes
         <legend>Etat civil</legend>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" autofocus required />
