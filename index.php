@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet" media="all" type="text/css" />
+    <title>Vérifications</title>
+</head>
+<body id="php">
+<div id="php">
 <?php 
 
 require ('fonctions.php');
@@ -270,3 +280,6 @@ echo "<pre>";
  	 } 
 
 ?>
+</div>
+</body>
+</html>
