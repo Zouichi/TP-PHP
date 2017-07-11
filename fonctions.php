@@ -1,7 +1,11 @@
 <?php
-function verif($arg_1, $arg_2, /* ..., */ $arg_n)
+function isset_decla()
 {
-    echo "Exemple de fonction.\n";
-    return $retval;
+    if (isset($_POST['declaration'])) {
+	;
+}
+	else {
+		echo "Merci d'indiquer si la déclaration concerne une ou deux personnes <br />";
+	}
 }
 ?>
