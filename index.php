@@ -226,16 +226,394 @@ else
     $enfants=null;
 }
 
-if(verification("texte",$_POST['nom_enfant_1']))
+if(isset($_POST['nom_enfant_1']))
 {
     $nom_enfant_1=$_POST['nom_enfant_1'];
+}
+else
+{
+    $nom_enfant_1=null;
+}
+
+if(isset($_POST['nom_enfant_2']))
+{
+    $nom_enfant_2=$_POST['nom_enfant_2'];
+}
+else
+{
+    $nom_enfant_2=null;
+}
+
+if(isset($_POST['nom_enfant_3']))
+{
+    $nom_enfant_3=$_POST['nom_enfant_3'];
+}
+else
+{
+    $nom_enfant_3=null;
+}
+
+if(isset($_POST['date_naissance_enfant_1']))
+{
+    $date_naissance_enfant_1=$_POST['date_naissance_enfant_1'];
+}
+else
+{
+    $date_naissance_enfant_1=null;
+}
+
+if(isset($_POST['date_naissance_enfant_2']))
+{
+    $date_naissance_enfant_2=$_POST['date_naissance_enfant_2'];
+}
+else
+{
+    $date_naissance_enfant_2=null;
+}
+
+if(isset($_POST['date_naissance_enfant_3']))
+{
+    $date_naissance_enfant_3=$_POST['date_naissance_enfant_3'];
+}
+else
+{
+    $date_naissance_enfant_3=null;
+}
+
+if(isset($_POST['declaration_impots_1']))
+{
+    $declaration_impots_1=$_POST['declaration_impots_1'];
+}
+else
+{
+    $declaration_impots_1=null;
+}
+
+if(isset($_POST['faire_declaration_impots_1']))
+{
+    $faire_declaration_impots_1=$_POST['faire_declaration_impots_1'];
+}
+else
+{
+    $faire_declaration_impots_1=null;
+}
+
+if(verification("nombre",$_POST['montant_impots_1']))
+{
+    $montant_impots_1=$_POST['montant_impots_1'];
 }
 Else
 {
     $error=1;
-    $error_mess.='Erreur sur le nom du premier enfant <br/>';
+    $error_mess.='Erreur sur le montant des impôts de la carte principale <br/>';
 }
 
+if(isset($_POST['declaration_impots_2']))
+{
+    $declaration_impots_2=$_POST['declaration_impots_2'];
+}
+else
+{
+    $declaration_impots_2=null;
+}
+
+if(isset($_POST['faire_declaration_impots_2']))
+{
+    $faire_declaration_impots_2=$_POST['faire_declaration_impots_2'];
+}
+else
+{
+    $faire_declaration_impots_2=null;
+}
+
+if(verification("nombre",$_POST['montant_impots_2']))
+{
+    $montant_impots_2=$_POST['montant_impots_2'];
+}
+Else
+{
+    $error=1;
+    $error_mess.='Erreur sur le montant des impôts de la carte additionnelle <br/>';
+}
+
+if(isset($_POST['emprunt_1']))
+{
+    $emprunt_1=$_POST['emprunt_1'];
+}
+else
+{
+    $emprunt_1=null;
+}
+
+if(isset($_POST['nature_emprunt_1']))
+{
+    $nature_emprunt_1=$_POST['nature_emprunt_1'];
+}
+else
+{
+    $nature_emprunt_1=null;
+}
+
+if(isset($_POST['montant_mensualites_1']))
+{
+    $montant_mensualites_1=$_POST['montant_mensualites_1'];
+}
+else
+{
+    $montant_mensualites_1=null;
+}
+
+if(isset($_POST['date_fin_remboursement_1']))
+{
+    $date_fin_remboursement_1=$_POST['date_fin_remboursement_1'];
+}
+else
+{
+    $date_fin_remboursement_1=null;
+}
+
+if(isset($_POST['taux_credit_1']))
+{
+    $taux_credit_1=$_POST['taux_credit_1'];
+}
+else
+{
+    $taux_credit_1=null;
+}
+
+if(isset($_POST['capital_restant_du_1']))
+{
+    $capital_restant_du_1=$_POST['capital_restant_du_1'];
+}
+else
+{
+    $capital_restant_du_1=null;
+}
+
+if(isset($_POST['capital_emprunte_1']))
+{
+    $capital_emprunte_1=$_POST['capital_emprunte_1'];
+}
+else
+{
+    $capital_emprunte_1=null;
+}
+
+if(isset($_POST['nature_emprunt_2']))
+{
+    $nature_emprunt_2=$_POST['nature_emprunt_2'];
+}
+else
+{
+    $nature_emprunt_2=null;
+}
+
+if(isset($_POST['montant_mensualites_2']))
+{
+    $montant_mensualites_2=$_POST['montant_mensualites_2'];
+}
+else
+{
+    $montant_mensualites_2=null;
+}
+
+if(isset($_POST['date_fin_remboursement_2']))
+{
+    $date_fin_remboursement_2=$_POST['date_fin_remboursement_2'];
+}
+else
+{
+    $date_fin_remboursement_2=null;
+}
+
+if(isset($_POST['taux_credit_2']))
+{
+    $taux_credit_2=$_POST['taux_credit_2'];
+}
+else
+{
+    $taux_credit_2=null;
+}
+
+if(isset($_POST['capital_restant_du_2']))
+{
+    $capital_restant_du_2=$_POST['capital_restant_du_2'];
+}
+else
+{
+    $capital_restant_du_2=null;
+}
+
+if(isset($_POST['capital_emprunte_2']))
+{
+    $capital_emprunte_2=$_POST['capital_emprunte_2'];
+}
+else
+{
+    $capital_emprunte_2=null;
+}
+
+if(isset($_POST['nature_emprunt_3']))
+{
+    $nature_emprunt_3=$_POST['nature_emprunt_3'];
+}
+else
+{
+    $nature_emprunt_3=null;
+}
+
+if(isset($_POST['montant_mensualites_3']))
+{
+    $montant_mensualites_3=$_POST['montant_mensualites_3'];
+}
+else
+{
+    $montant_mensualites_3=null;
+}
+
+if(isset($_POST['date_fin_remboursement_3']))
+{
+    $date_fin_remboursement_3=$_POST['date_fin_remboursement_3'];
+}
+else
+{
+    $date_fin_remboursement_3=null;
+}
+
+if(isset($_POST['taux_credit_3']))
+{
+    $taux_credit_3=$_POST['taux_credit_3'];
+}
+else
+{
+    $taux_credit_3=null;
+}
+
+if(isset($_POST['capital_restant_du_3']))
+{
+    $capital_restant_du_3=$_POST['capital_restant_du_3'];
+}
+else
+{
+    $capital_restant_du_3=null;
+}
+
+if(isset($_POST['capital_emprunte_3']))
+{
+    $capital_emprunte_3=$_POST['capital_emprunte_3'];
+}
+else
+{
+    $capital_emprunte_3=null;
+}
+
+if(isset($_POST['nature_emprunt_4']))
+{
+    $nature_emprunt_4=$_POST['nature_emprunt_4'];
+}
+else
+{
+    $nature_emprunt_4=null;
+}
+
+if(isset($_POST['montant_mensualites_4']))
+{
+    $montant_mensualites_4=$_POST['montant_mensualites_4'];
+}
+else
+{
+    $montant_mensualites_4=null;
+}
+
+if(isset($_POST['date_fin_remboursement_4']))
+{
+    $date_fin_remboursement_4=$_POST['date_fin_remboursement_4'];
+}
+else
+{
+    $date_fin_remboursement_4=null;
+}
+
+if(isset($_POST['taux_credit_4']))
+{
+    $taux_credit_4=$_POST['taux_credit_4'];
+}
+else
+{
+    $taux_credit_4=null;
+}
+
+if(isset($_POST['capital_restant_du_4']))
+{
+    $capital_restant_du_4=$_POST['capital_restant_du_4'];
+}
+else
+{
+    $capital_restant_du_4=null;
+}
+
+if(isset($_POST['capital_emprunte_4']))
+{
+    $capital_emprunte_4=$_POST['capital_emprunte_4'];
+}
+else
+{
+    $capital_emprunte_4=null;
+}
+
+if(isset($_POST['nature_emprunt_5']))
+{
+    $nature_emprunt_5=$_POST['nature_emprunt_5'];
+}
+else
+{
+    $nature_emprunt_5=null;
+}
+
+if(isset($_POST['montant_mensualites_5']))
+{
+    $montant_mensualites_5=$_POST['montant_mensualites_5'];
+}
+else
+{
+    $montant_mensualites_5=null;
+}
+
+if(isset($_POST['date_fin_remboursement_5']))
+{
+    $date_fin_remboursement_5=$_POST['date_fin_remboursement_5'];
+}
+else
+{
+    $date_fin_remboursement_5=null;
+}
+
+if(isset($_POST['taux_credit_5']))
+{
+    $taux_credit_5=$_POST['taux_credit_5'];
+}
+else
+{
+    $taux_credit_5=null;
+}
+
+if(isset($_POST['capital_restant_du_5']))
+{
+    $capital_restant_du_5=$_POST['capital_restant_du_5'];
+}
+else
+{
+    $capital_restant_du_5=null;
+}
+
+if(isset($_POST['capital_emprunte_5']))
+{
+    $capital_emprunte_5=$_POST['capital_emprunte_5'];
+}
+else
+{
+    $capital_emprunte_5=null;
+}
 if($error==0)
 {
     $resultat['bilan']=$bilan;
@@ -261,6 +639,50 @@ if($error==0)
     $resultat['revenus_conjoint']=$revenus_conjoint;
     $resultat['enfants']=$enfants;
     $resultat['nom_enfant_1']=$nom_enfant_1;
+    $resultat['nom_enfant_2']=$nom_enfant_2;
+    $resultat['nom_enfant_3']=$nom_enfant_3;
+    $resultat['date_naissance_enfant_1']=$date_naissance_enfant_1;
+    $resultat['date_naissance_enfant_2']=$date_naissance_enfant_2;
+    $resultat['date_naissance_enfant_3']=$date_naissance_enfant_3;
+    $resultat['declaration_impots_1']=$declaration_impots_1;
+    $resultat['faire_declaration_impots_1']=$faire_declaration_impots_1;
+    $resultat['montant_impots_1']=$montant_impots_1;
+    $resultat['declaration_impots_2']=$declaration_impots_2;
+    $resultat['faire_declaration_impots_2']=$faire_declaration_impots_2;
+    $resultat['montant_impots_2']=$montant_impots_2;
+    $resultat['emprunt_1']=$emprunt_1;
+    $resultat['nature_emprunt_1']=$nature_emprunt_1;
+    $resultat['montant_mensualites_1']=$montant_mensualites_1;
+    $resultat['date_fin_remboursement_1']=$date_fin_remboursement_1;
+    $resultat['taux_credit_1']=$taux_credit_1;
+    $resultat['capital_restant_du_1']=$capital_restant_du_1;
+    $resultat['capital_emprunte_1']=$capital_emprunte_1;
+    $resultat['nature_emprunt_2']=$nature_emprunt_2;
+    $resultat['montant_mensualites_2']=$montant_mensualites_2;
+    $resultat['date_fin_remboursement_2']=$date_fin_remboursement_2;
+    $resultat['taux_credit_2']=$taux_credit_2;
+    $resultat['capital_restant_du_2']=$capital_restant_du_2;
+    $resultat['capital_emprunte_2']=$capital_emprunte_2;
+    $resultat['nature_emprunt_3']=$nature_emprunt_3;
+    $resultat['montant_mensualites_3']=$montant_mensualites_3;
+    $resultat['date_fin_remboursement_3']=$date_fin_remboursement_3;
+    $resultat['taux_credit_3']=$taux_credit_3;
+    $resultat['capital_restant_du_3']=$capital_restant_du_3;
+    $resultat['capital_emprunte_3']=$capital_emprunte_3;
+    $resultat['nature_emprunt_4']=$nature_emprunt_4;
+    $resultat['montant_mensualites_4']=$montant_mensualites_4;
+    $resultat['date_fin_remboursement_4']=$date_fin_remboursement_4;
+    $resultat['taux_credit_4']=$taux_credit_4;
+    $resultat['capital_restant_du_4']=$capital_restant_du_4;
+    $resultat['capital_emprunte_4']=$capital_emprunte_4;
+    $resultat['nature_emprunt_5']=$nature_emprunt_5;
+    $resultat['montant_mensualites_5']=$montant_mensualites_5;
+    $resultat['date_fin_remboursement_5']=$date_fin_remboursement_5;
+    $resultat['taux_credit_5']=$taux_credit_5;
+    $resultat['capital_restant_du_5']=$capital_restant_du_5;
+    $resultat['capital_emprunte_5']=$capital_emprunte_5;
+
+    
 }
 Else
 {
@@ -296,7 +718,7 @@ echo "Tableau client luxembourgeois : ";
 print_r($array_client_luxembourg);
 echo "<pre>";
 "<br />";
- 	 } 
+} 
 
 ?>
 </div>
