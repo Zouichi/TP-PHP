@@ -1,3 +1,5 @@
+Projet réalisé par Sarah Henry, Marie-Sophie Mayor, Daniel Girard et Rémi Boiteux
+
 Nous avons choisi d'utiliser <fieldset> pour pouvoir séparer le formulaire par thème.
 
 L'input radio nous permet de limiter le nombre de réponses, et de n'en choisir qu'une seule.
@@ -5,3 +7,9 @@ L'input radio nous permet de limiter le nombre de réponses, et de n'en choisir q
 L'input text nous permet de créer un champ pour noter une chaîne de caractères.
 
 L'input checkbox nous permet de limiter le nombre de réponses, et d'en choisir plusieurs.
+
+Nous avons utilisé la fonction isset pour vérifier que les champs n'étaient pas vides.
+
+Nous avons créé une fonction de vérification qui teste les chaînes de caractères en fonction de leur type, texte, nombre, date ou mail.
+
+Nous avons créé deux arrays pour récupérer les nationalité, nom et prénom des clients en fonction de leur nationalité, en utilisant l'instruction if.
