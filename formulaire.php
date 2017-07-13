@@ -15,10 +15,11 @@ echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.'; /*Utilisation de PHP p
 </div>
 <form method="post" action="index.php"> <!-- Formulaire avec <fieldset> pour pouvoir séparer les différents thèmes -->
     <fieldset>
+        <legend>Etat civil</legend>
         <p>Ce bilan concerne-t-il une ou deux personnes ?</p>
         <input type="radio" name="bilan" value="une_personne" id="bilan" required />Une personne
         <input type="radio" name="bilan" value="deux_personnes" id="bilan" />Deux personnes
-        <legend>Etat civil</legend>
+        <br/>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" autofocus required />
         <br />
@@ -248,8 +249,10 @@ echo 'Aujourd\'hui, nous sommes le '. date("d/m/Y") .'.'; /*Utilisation de PHP p
         <input type="text" name="capital_emprunte_5" id="capital_emprunte_5" />
         <br />
         <br />
-        <input type="submit" id="submit" value="Envoyer" />
     </fieldset>
+    <div id="valid">
+    	<input type="submit" name="submit" id="submit" value="Envoyer" />
+    </div>
 </form>
 </body>
 
